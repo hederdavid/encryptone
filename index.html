@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.svg" type="image/x-icon">
+    <title>EncryptONE - Seu encriptador de textos</title>
+    <!-- Large screen -->
+    <link rel="stylesheet" href="styles/style-large.css">
+    <!-- Icons -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,300,0,0" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/mascoteEncryptONE.png" alt="Mascote EncryptONE">
+            <h1>Encrypt<span>ONE</span></h1>
+        </div>
+        <h2>O melhor encriptador de textos</h2>
+    </header>
+    <main>
+        <div>
+            <textarea id="text-input" cols="30" rows="10" placeholder="Digite algo..."></textarea>
+            <div class="warning">
+                <span class="material-symbols-outlined">
+                    error
+                </span>
+                <p>Apenas letras minúsculas sem acento</p>
+            </div>
+            <div class="buttons-encrypt-or-descrypt">
+                <button id="encrypt-button" onclick="encryptText()">Encriptografar</button>
+                <button id="descrypt-button" onclick="descryptText()">Descriptografar</button>
+            </div>
+        </div>
+        <section>
+            <div class="text-and-copy">
+                <textarea name="" id="text-encrypted-or-descrypted" cols="30" rows="10" readonly></textarea>
+                <button class="noselect" onclick="copy()"><span class="text">Copiar</span><span
+                        class="material-symbols-outlined icon">
+                        file_copy
+                    </span></button>
+            </div>
+            <div id="nothing-here">
+                <img id="" src="img/robo-nada-encontrado.png" alt="Robô com uma lupa">
+                <h3>Nenhuma mensagem encontrada</h3>
+                <p>Digite um texto que você deseja encriptografar ou descriptografar.</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por <a href="https://www.linkedin.com/in/hederdavid/" target="_blank">Heder David</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

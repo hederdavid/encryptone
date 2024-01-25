@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala:wght@400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(2, 115, 94);
+    background: radial-gradient(circle, rgba(2, 115, 94, 1) 0%, rgba(2, 55, 67, 1) 100%);
+    height: 100vh;
+    font-family: 'Sarala', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -2rem;
+}
+
+header h2 {
+    font-size: 1.3rem;
+    color: #fff;
+    margin-top: -0.5rem;
+    padding-bottom: 2rem;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.logo img {
+    height: 8rem;
+}
+
+.logo h1 {
+    font-family: 'Righteous', cursive;
+    font-size: 5rem;
+    color: #fff;
+    margin-top: 1rem;
+    margin-left: 0.5rem;
+}
+
+.logo span {
+    color: #04ac8d;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+}
+
+#text-input {
+    border-radius: 1.5rem;
+    border-color: transparent;
+    height: 12rem;
+    width: 25rem;
+    font-size: 1.5rem;
+    background-color: transparent;
+    color: #FFF;
+    padding: 1rem;
+    resize: none;
+}
+
+#text-input:focus {
+    outline: none;
+    border-color: #04ac8d;
+    box-shadow: 0 0 0 0.2rem #04ac8d;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+#text-input::placeholder {
+    font-style: italic;
+    vertical-align: top;
+    font-size: 1.3rem;
+    font-family: 'Sarala', sans-serif;
+    color: #ffffff91;
+}
+
+.warning {
+    display: flex;
+    gap: 0.5rem; 
+    padding-bottom: 0.5rem;
+}
+
+.warning p {
+    color: #ffffff91;
+}
+
+.buttons-encrypt-or-descrypt {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.text-and-copy {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.noselect {
+    align-self: center;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 1.5rem;
+    padding: 1rem;
+    margin-left: 1rem;
+    width: 22rem;
+}
+
+section textarea {
+    border-radius: 1.5rem;
+    border-color: transparent;
+    height: 12rem;
+    width: 100%;
+    font-size: 1.2rem;
+    background-color: transparent;
+    padding: 1rem;
+    resize: none;
+}
+
+section textarea:focus {
+    outline: none;
+}
+
+#nothing-here {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#nothing-here img {
+    margin-right: 1.2rem;
+    height: 10rem;
+}
+
+#nothing-here h3 {
+    font-size: 1.2rem;
+    color: #066755;
+
+}
+
+#nothing-here p {
+    font-size: 0.9rem;
+    color: #066755;
+}
+
+
+
+footer {
+    margin-top: 1rem;
+    display: flex;
+    height: 2rem;
+    background-color: #FFF;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer a {
+    text-decoration: none;
+    color: #03725e;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+#encrypt-button {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    background-color: #04ac8d;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    font-size: 1rem;
+}
+
+#encrypt-button::before {
+    content: '\1F513';
+    font-size: 20px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
+
+#encrypt-button:hover {
+    background-color: #fff;
+    color: #04ac8d;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+#encrypt-button:active::before {
+    content: '\1F512';
+    animation: rotateLock 0.3s ease-in-out;
+}
+
+#descrypt-button {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    background-color: #04ac8d;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    font-size: 1rem;
+}
+
+#descrypt-button::before {
+    content: '\1F512';
+    font-size: 20px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    transition: transform 0.3s ease-in-out;
+}
+
+#descrypt-button:hover {
+    background-color: #fff;
+    color: #04ac8d;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+#descrypt-button:hover::before {
+    transform: rotate(0deg);
+}
+
+#descrypt-button:active::before {
+    content: '\1F513';
+    animation: rotateLock 0.3s ease-in-out;
+}
+
+@keyframes rotateLock {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+section button {
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    background: #04ac8d;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15);
+    background: #04ac8d;
+}
+
+section button,
+section button span {
+    transition: 200ms;
+}
+
+section button .text {
+    transform: translateX(35px);
+    color: white;
+    font-weight: bold;
+}
+
+section button .icon {
+    position: absolute;
+    border-left: 1px solid #ffffff;
+    transform: translateX(110px);
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.material-symbols-outlined {
+    height: 2rem;
+    color: rgb(255, 255, 255);
+}
+
+section button:hover {
+    background: #fff;
+    border: 2px solid #04ac8d;
+}
+
+section button:hover .text {
+    color: transparent;
+}
+
+section button:hover .icon {
+    width: 150px;
+    border-left: none;
+    transform: translateX(0);
+    color: #04ac8d;
+}
+
+section button:focus {
+    outline: none;
+}
+
+section button:active .material-symbols-outlined {
+    border-radius: 0.5rem;
+    background-color: #04ac8d2d;
+    transform: scale(0.8);
+    transition: transform 0.3s ease;
+}
