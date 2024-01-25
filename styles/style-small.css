@@ -1,0 +1,52 @@
+@media (max-width: 768px) {
+    body {
+        justify-content: start;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    .logo img {
+        height: 5.3rem;
+    }
+
+    .logo h1 {
+        font-size: 2.7rem;
+    }
+
+    header h2 {
+        font-size: 0.7rem;
+        padding-left: 1.8rem;
+    }
+    main {
+        flex-direction: column;
+    }
+
+    #text-input {
+        width: 20rem;
+        font-size: 1rem;
+    }
+
+    #text-input::placeholder {
+        font-size: 1rem;
+    }
+
+    .warning {
+        font-size: 0.85rem;
+    }
+
+    #encrypt-button, #descrypt-button {
+        width: 8.5rem;
+        font-size: 0.8rem;
+    }
+
+    #encrypt-button::before, #descrypt-button::before {
+        margin-left: -0.7rem;
+        font-size: 1rem;
+    }
+
+    section {
+        margin-top: -2rem;
+        margin-bottom: 3rem;
+        width: 18rem;
+    }
+}

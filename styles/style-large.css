@@ -61,6 +61,10 @@ main {
     gap: 5rem;
 }
 
+main textarea {
+    width: 5rem;
+}
+
 #text-input {
     border-radius: 1.5rem;
     border-color: transparent;
@@ -165,8 +169,6 @@ section textarea:focus {
     font-size: 0.9rem;
     color: #066755;
 }
-
-
 
 footer {
     margin-top: 1rem;
