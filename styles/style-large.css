@@ -124,7 +124,7 @@ section {
     border-radius: 1.5rem;
     padding: 1rem;
     margin-left: 1rem;
-    width: 22rem;
+    width: 25rem;
 }
 
 section textarea {
@@ -132,7 +132,7 @@ section textarea {
     border-color: transparent;
     height: 12rem;
     width: 100%;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     background-color: transparent;
     padding: 1rem;
     resize: none;
@@ -219,7 +219,7 @@ footer a:hover {
 
 #encrypt-button:active::before {
     content: '\1F512';
-    animation: rotateLock 0.3s ease-in-out;
+    animation: shake 0.2s ease-in-out;
 }
 
 #descrypt-button {
@@ -257,18 +257,22 @@ footer a:hover {
 
 #descrypt-button:active::before {
     content: '\1F513';
-    animation: rotateLock 0.3s ease-in-out;
+    animation: shake 0.2s ease-in-out;
 }
 
-@keyframes rotateLock {
-    0% {
-        transform: rotate(0deg);
+@keyframes shake {
+    0%, 100% {
+      transform: translateX(0);
     }
-
-    100% {
-        transform: rotate(360deg);
+  
+    25%, 75% {
+      transform: translateX(-3px);
     }
-}
+  
+    50% {
+      transform: translateX(3px);
+    }
+  }
 
 section button {
     width: 150px;
