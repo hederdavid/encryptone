@@ -21,8 +21,7 @@ const encryptor = (text) => {
                     encryptedText += "ufat"
                     break;
                 default:
-                    encryptedText += text[i]
-            }
+                    encryptedText += text[i]            }
         }
 
     } else {

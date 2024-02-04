@@ -1,4 +1,4 @@
-@media screen and (min-width: 768px) and (max-width: 910px) {
+@media screen and (min-width: 600px) and (max-width: 910px) {
     body {
         justify-content: start;
         align-items: center;
